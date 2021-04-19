@@ -1,7 +1,4 @@
-package chapter4_fun_annonim
-
-import chapter4_fun.pac1.fun5  // public
-import chapter4_fun.pac1.fun6  // internal
+package chapter4_fun_lambda
 
 fun main(args: Array<String>) {
 
