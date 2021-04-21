@@ -11,7 +11,11 @@ fun main(args: Array<String>) {
     println(a.fun12()) //MyInterfaceSecondMyInterfaceSecond.fun12
     println(a.fun13()) //MyAbstractClassMyAbstractClass.fun14
 
+    // расширения функции
     println(a.isClear()) //false
+
+    //расширение свойства
+    println(a.param4) //1000
 }
 
 
@@ -84,6 +88,12 @@ public class A : MyInterface,MyInterfaceSecond, MyAbstractClass() { //internal -
 fun A.isClear():Boolean{
     return param3 == 0 && param2 == 0 && param1 == 0
 }
+
+val A.param4: Int
+    get() = 5
+
+
+
 
 
 
